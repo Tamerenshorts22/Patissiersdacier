@@ -13,7 +13,15 @@
 @media(max-width:640px),(orientation:portrait){
   .film video{object-fit:contain;background:#000}
 }
-@media(max-width:640px){.tagline{display:none}.player{left:18px;right:18px;bottom:max(18px,env(safe-area-inset-bottom))}.controls-row{margin-top:4px}.transport,.right-controls{gap:8px}.transport button,.right-controls button{min-width:30px}}
+@media(max-width:640px){
+  .brand{left:0;right:0;top:clamp(16px,4vw,28px);text-align:center}
+  .company{font-size:14px}
+  .tagline{display:block;font-size:10px;margin-top:5px}
+  .player{left:18px;right:18px;bottom:max(18px,env(safe-area-inset-bottom))}
+  .controls-row{margin-top:4px}
+  .transport,.right-controls{gap:8px}
+  .transport button,.right-controls button{min-width:30px}
+}
 </style>
 </head>
 <body>
